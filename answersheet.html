@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <meta charset = "utf-8">
+       <title>Forms</title>
+    </head>
+ 
+    <body>
+        <h1>答案卷</h1>
+        <form method = "post" action = "http://www.dog.com">
+            <!-- hidden inputs contain non-visual -->
+            <!-- information that will also be submitted -->
+            <input type = "hidden" name = "recipient"
+               value = "doooooog@gmail.com">
+
+            <p><label>姓名: 
+                <input name = "name" type = "text" size = "25">
+            </label></p>
+
+            <p><label>學歷: 
+                <input name = "name" type = "text" size = "25">
+            </label></p>
+
+            <p><label>Answer1:<input name = "name" type = "text" size = "25"
+                     maxlength = "30">
+            </label></p>
+
+            <p><label>Answer2:<input name = "name" type = "text" size = "25"
+                maxlength = "30">
+            </label></p>
+            
+            <p><strong>請協助填寫以下資料：</strong></p>
+            <p>
+                <strong>您有興趣的領域?</strong><br>
+    
+                <label>機械工程
+                   <input name = "number" type = "checkbox" 
+                      value = "0"></label>
+                <label>控制系統
+                   <input name = "number" type = "checkbox" 
+                      value = "1"></label>
+                <label>人工智慧
+                   <input name = "number" type = "checkbox" 
+                      value = "2"></label> 
+                <label>材料分析
+                    <input name = "number" type = "checkbox" 
+                        value = "3"></label> 
+            </p>
+
+            <p>
+                <strong>您是從何種管道獲得本系招生訊息?</strong><br>
+                <label>搜尋引擎
+                   <input name = "way" type = "radio"
+                      value = "search engine" checked></label>
+                <label>紙本廣告
+                   <input name = "way" type = "radio" 
+                      value = "paper"></label> 
+                <label>親友告知
+                   <input name = "way" type = "radio" 
+                      value = "fam_fri_told"></label>
+                <label>老師推薦
+                   <input name = "way" type = "radio" 
+                      value = "teather_recommand"></label>
+                <label>其他
+                   <input name = "way" type = "radio" 
+                      value = "other"></label>
+             </p>
+
+            <p><label>作答情形或遇到的困難:<br>
+                <textarea name = "comments"
+                   rows = "10" cols = "50">請填寫。</textarea>
+            </label></p>
+
+            <input type = "submit" value = "Submit">
+        
+         </form>
+   </body>
+</html>
